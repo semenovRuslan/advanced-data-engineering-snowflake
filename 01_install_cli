@@ -1,0 +1,15 @@
+# Step 1: Download the .deb package from the URL
+# Download the Snowflake CLI deb package from the Snowflake CLI repository.
+wget https://sfc-repo.snowflakecomputing.com/snowflake-cli/linux_x86_64/3.27.0/snowflake-cli-3.27.0.x86_64.deb
+
+# Step 2: Install the package:
+sudo dpkg -i snowflake-cli-3.27.0.x86_64.deb
+
+# Step 3 Verify that the software was installed successfully:
+snow --help
+
+# Step 4 Configuring Snowflake CLI and connecting to Snowflake
+https://docs.snowflake.com/en/developer-guide/snowflake-cli/connecting/connect
+
+# Step 5 full documentation
+https://docs.snowflake.com/en/developer-guide/snowflake-cli/installation/installation

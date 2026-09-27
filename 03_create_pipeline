@@ -1,0 +1,7 @@
+#in the terminal start script for creating environment
+$ snow git execute @advanced_data_engineering_snowflake/branches/main/module-1/hamburg_weather/pipeline/data/load_tasty_bytes.sql -D "env='STAGING'"  --database=COURSE_REPO  --schema=PUBLIC --role=ACCOUNTADMIN
+
+
+# 2 create pipeline in each environment for all objects in tree
+snow git execute @advanced_data_engineering_snowflake/branches/main/module-1/hamburg_weather/pipeline/objects/ -D "env='STAGING'"  --database=COURSE_REPO  --schema=PUBLIC --role=ACCOUNTADMIN
+

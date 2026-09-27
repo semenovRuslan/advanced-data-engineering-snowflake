@@ -1,0 +1,18 @@
+https://docs.snowflake.com/en/developer-guide/snowflake-cli/installation/installation
+
+# step 1 create file configuration for snowflake CLI
+$ cd ~
+$ mkdir .snowflake
+$ cd .snowflake
+$ nano config.toml
+File in the local folder C:/learning/snowflake/config.toml
+Save and exit: Press Ctrl + O then Enter (to write the file)
+
+
+# step 2 Assign permission to file 
+$ chown $USER config.toml
+$ chmod 0600 config.toml
+
+
+# step 3 test connection
+$ snow connection test --connection advanced_data_engineering_snowflake 
